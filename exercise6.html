@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .daddy div{
+        width: 100px;
+        height: 100px;
+        background-color: olive;
+    }
+    .daddy{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    @media only screen and (min-width:400px){
+        .daddy{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    }
+    @media only screen and (max-width:600px){
+        .daddy{
+            display: grid;
+            gap: 10px;
+        }
+    }
+    @media only screen and (max-width:400px){
+        .daddy{
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+
+</style>
+<body>
+    <div class="daddy">
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+    </div>
+</body>
+</html>
