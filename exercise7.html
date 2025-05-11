@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .daddy div{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+    .daddy{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    @media only screen and (max-width:700px){
+        .daddy{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media only screen and (max-width:400px){
+        .daddy{
+            display: flex;
+            flex-direction: column;
+    }
+        .daddy div{
+            background-color: yellow;
+        }
+    }
+</style>
+<body>
+    <div class="daddy">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
